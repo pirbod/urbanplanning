@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #13201c;
+  background: #f5efe4;
+  font-family: Aptos, "Segoe UI", sans-serif;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.leaflet-container {
+  min-height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+  background: #dce6e4;
+}
+
+.map-grid {
+  background-image:
+    linear-gradient(rgba(15, 76, 92, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 76, 92, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.timeline-grid {
+  background-image: linear-gradient(90deg, rgba(19, 32, 28, 0.08) 1px, transparent 1px);
+  background-size: 8.333% 100%;
+}
+
+@media (max-width: 900px) {
+  .leaflet-container {
+    border-radius: 1rem;
+  }
+}
